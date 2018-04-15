@@ -17,6 +17,10 @@ services:
         class: Weebly\PHPStan\Laravel\HelpersReturnTypeExtension
         tags:
             - phpstan.broker.dynamicFunctionReturnTypeExtension
+    -
+        class: Weebly\PHPStan\Laravel\ResourceExtension
+        tags:
+            - phpstan.broker.propertiesClassReflectionExtension
 
     -   class: Weebly\PHPStan\Laravel\Utils\AnnotationsHelper
 
